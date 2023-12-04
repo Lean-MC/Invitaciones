@@ -2,10 +2,33 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
+    background-color: #EEE7CE;
+}
+
+h1{
+    font-family: 'Anek Malayalam', sans-serif;
+font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: #006A6A;}
+
+h2{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: #006A6A;
+}
+
+p{
+    font-family: 'Neuton', serif;
+    font-size: 20px;
 }
 
 .section {
-    margin-bottom: 30px;
+    margin:5%
+}
+.section p{
+    word-wrap: break-word; /* Permite que las palabras se rompan */
+
 }
 
 #map{
@@ -16,7 +39,7 @@ body {
 }
 
 #fondoDiv {
-    width: 60%;
+    width: 40%;
     height: 400px;
     display: flex;
     align-items: center;
@@ -30,31 +53,41 @@ body {
     margin: 0 auto;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #3498db;
-    border-radius: 25%;
-    color: #3498db;
-    background-color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    P{
+        font-size: 20PX;
+    }
+
+    .section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #fondoDiv {
+        width: 80%;
+        height: 400px;
+    }
+
+    #map{
+        margin: 0 auto;
+        height: 250px;
+        width: 80%;
+        border: 1px solid #000
+    }
 }
 
-#button1:hover {
-    background-color: #34db4d;
-    color: white;
-}
 
 
 
 
-
-#button2:hover {
-    background-color: rgb(219, 52, 60);
-    color: white;
-}
